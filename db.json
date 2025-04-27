@@ -1,0 +1,139 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Getting Started with Angular",
+      "content": "Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular.",
+      "author": "Admin User",
+      "authorId": 1,
+      "category": "Angular",
+      "imageUrl": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "createdAt": "2023-06-15T10:30:00Z",
+      "updatedAt": "2023-06-15T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "title": "JavaScript Best Practices",
+      "content": "Learn the best practices for writing clean, maintainable JavaScript code. This article covers coding conventions, error handling, and performance optimization techniques.",
+      "author": "Regular User",
+      "authorId": 2,
+      "category": "JavaScript",
+      "imageUrl": "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "createdAt": "2023-06-18T14:45:00Z",
+      "updatedAt": "2023-06-18T14:45:00Z"
+    },
+    {
+      "id": "3",
+      "title": "CSS Grid Layout Tutorial",
+      "content": "CSS Grid Layout is a two-dimensional layout system designed for user interface design. This tutorial will teach you how to create complex layouts with ease.",
+      "author": "Admin User",
+      "authorId": 1,
+      "category": "CSS",
+      "imageUrl": "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "createdAt": "2023-06-22T09:15:00Z",
+      "updatedAt": "2023-06-22T09:15:00Z"
+    },
+    {
+      "id": 0,
+      "title": "typescript",
+      "content": "dzafzadzafzaf",
+      "category": "JavaScript",
+      "imageUrl": "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "author": "Admin User",
+      "authorId": "1",
+      "createdAt": "2025-04-26T20:03:56.811Z",
+      "updatedAt": "2025-04-26T20:03:56.811Z"
+    },
+    {
+      "id": "dd7e",
+      "title": "typescript",
+      "content": "dsqfsqdsqdsqfsqfsqf",
+      "category": "HTML",
+      "imageUrl": "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "author": "Admin User",
+      "authorId": "1",
+      "createdAt": "2025-04-26T20:05:09.957Z",
+      "updatedAt": "2025-04-26T20:05:09.957Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": 1,
+      "userId": 2,
+      "author": "Regular User",
+      "content": "Great introduction to Angular! Looking forward to more content.",
+      "createdAt": "2023-06-16T08:45:00Z"
+    },
+    {
+      "id": "2",
+      "postId": 1,
+      "userId": 1,
+      "author": "Admin User",
+      "content": "Thanks! I'm planning to create a series of Angular tutorials.",
+      "createdAt": "2023-06-16T10:20:00Z"
+    },
+    {
+      "id": "3",
+      "postId": 2,
+      "userId": 1,
+      "author": "Admin User",
+      "content": "Very useful JavaScript tips!",
+      "createdAt": "2023-06-19T16:30:00Z"
+    },
+    {
+      "id": "1165",
+      "postId": "3",
+      "userId": "2",
+      "author": "Regular User",
+      "content": "hello",
+      "createdAt": "2025-04-26T18:19:49.341Z"
+    },
+    {
+      "id": "bc5a",
+      "postId": "3",
+      "userId": "2",
+      "author": "Regular User",
+      "content": "<script>alert(\"hello world\")</script>",
+      "createdAt": "2025-04-26T18:20:18.386Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@blog.com",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Regular User",
+      "email": "user@eblog.com",
+      "password": "user",
+      "role": "user"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Angular"
+    },
+    {
+      "id": "2",
+      "name": "JavaScript"
+    },
+    {
+      "id": "3",
+      "name": "CSS"
+    },
+    {
+      "id": "4",
+      "name": "HTML"
+    },
+    {
+      "id": "5",
+      "name": "TypeScript"
+    }
+  ]
+}
