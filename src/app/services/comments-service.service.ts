@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
-export class CommentsServiceService {
-
-  constructor() { }
+export class CommentService {
 }

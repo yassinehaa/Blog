@@ -1,0 +1,101 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Introduction to React",
+      "content": "React is a JavaScript library for building user interfaces. Discover how to create dynamic web applications with React's component-based architecture.",
+      "author": "Super User",
+      "authorId": 1,
+      "category": "React",
+      "imageUrl": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "createdAt": "2023-07-01T12:00:00Z",
+      "updatedAt": "2023-07-01T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Python Coding Tips",
+      "content": "Explore essential tips for writing efficient Python code. This guide covers style guidelines, exception handling, and optimization strategies.",
+      "author": "Guest Writer",
+      "authorId": 2,
+      "category": "Python",
+      "imageUrl": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "createdAt": "2023-07-05T15:30:00Z",
+      "updatedAt": "2023-07-05T15:30:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Flexbox for Beginners",
+      "content": "Flexbox is a one-dimensional layout system for creating responsive designs. Learn how to use Flexbox to build modern web layouts.",
+      "author": "Super User",
+      "authorId": 1,
+      "category": "CSS",
+      "imageUrl": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "createdAt": "2023-07-10T11:00:00Z",
+      "updatedAt": "2023-07-10T11:00:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "author": "Guest Writer",
+      "content": "Awesome React guide! More please!",
+      "createdAt": "2023-07-02T09:15:00Z"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "userId": 1,
+      "author": "Super User",
+      "content": "Glad you liked it! Stay tuned for a React series.",
+      "createdAt": "2023-07-02T11:45:00Z"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "userId": 1,
+      "author": "Super User",
+      "content": "Really helpful Python advice!",
+      "createdAt": "2023-07-06T17:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Super User",
+      "email": "superuser@example.com",
+      "password": "super456",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Guest Writer",
+      "email": "guest@example.com",
+      "password": "guest789",
+      "role": "user"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "React"
+    },
+    {
+      "id": 2,
+      "name": "Python"
+    },
+    {
+      "id": 3,
+      "name": "CSS"
+    },
+    {
+      "id": 4,
+      "name": "HTML"
+    },
+    {
+      "id": 5,
+      "name": "JavaScript"
+    }
+  ]
+}

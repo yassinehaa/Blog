@@ -1,1 +1,69 @@
-<p>home works!</p>
+<div class="container page-container fade-in">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-title">Welcome to Angular Blog</h1>
+      <p class="lead">
+        Discover the latest articles on Angular, JavaScript, CSS, and more.
+      </p>
+    </div>
+  </div>
+
+  <!-- Featured Article -->
+  <div class="row mb-5" *ngIf="featuredPost">
+    <div class="col-md-12">
+      <h2 class="mb-4">Featured Article</h2>
+      <div class="card featured-card">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img [src]="featuredPost.imageUrl" class="featured-img" [alt]="featuredPost.title">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body d-flex flex-column h-100">
+              <span class="category-badge mb-2">{{ featuredPost.category }}</span>
+              <h3 class="card-title">{{ featuredPost.title }}</h3>
+              <p class="card-text">{{ featuredPost.content | slice:0:200 }}...</p>
+              <p class="card-text">
+                <small class="text-muted">By {{ featuredPost.author }} on
+                  {{ featuredPost.createdAt | date:'mediumDate' }}
+                </small>
+              </p>
+              <a [routerLink]="['/posts', featuredPost.id]" class="btn btn-primary mt-auto">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Articles -->
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="mb-4">Recent Articles</h2>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col" *ngFor="let post of recentPosts">
+      <div class="card h-100">
+        <img [src]="post.imageUrl" class="card-img-top" [alt]="post.title">
+        <div class="card-body">
+          <span class="category-badge mb-2">{{ post.category }}</span>
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.content | slice:0:100 }}...</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">By {{ post.author }} on {{ post.createdAt | date:'mediumDate' }}</small>
+          <a [routerLink]="['/posts', post.id]" class="btn btn-sm btn-outline-primary float-end">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-12 text-center">
+      <a routerLink="/posts" class="btn btn-accent btn-lg">View All Articles</a>
+    </div>
+  </div>
+</div>

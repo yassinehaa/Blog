@@ -1,0 +1,13 @@
+.featured-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+.featured-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
