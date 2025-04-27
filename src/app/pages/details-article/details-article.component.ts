@@ -25,23 +25,25 @@ import {ArticlesService} from '../../services/articles-service.service';
         </div>
       </div>
 
+      {{post|json}}
+
       <!-- Article Header -->
       <div class="row mb-4">
         <div class="col-md-8">
-          <span class="category-badge mb-2">{{ post[0].category }}</span>
-          <h1 class="post-title">{{ post[0].title }}</h1>
+          <span class="category-badge mb-2">{{ post.category }}</span>
+          <h1 class="post-title">{{ post.title }}</h1>
           <div class="post-meta">
-            <span>By {{  post[0].author}}</span>]
+            <span>By {{  post.author}}</span>]
             <span class="mx-2">·</span>
-            <span>{{  post[0].createdAt | date:'medium' }}</span>
-            <span class="mx-2" *ngIf="post[0].updatedAt !==  post[0].createdAt">·</span>
-            <span *ngIf=" post[0].updatedAt !== post[0].createdAt">
-              Updated: {{  post[0].updatedAt | date:'medium' }}
+            <span>{{  post.createdAt | date:'medium' }}</span>
+            <span class="mx-2" *ngIf="post.updatedAt !==  post.createdAt">·</span>
+            <span *ngIf=" post.updatedAt !== post.createdAt">
+              Updated: {{  post.updatedAt | date:'medium' }}
             </span>
           </div>
         </div>
         <div class="col-md-4 text-end" *ngIf="canEdit">
-          <button class="btn btn-outline-primary me-2" [routerLink]="['/posts/edit',  post[0].id]">
+          <button class="btn btn-outline-primary me-2" [routerLink]="['/posts/edit',  post.id]">
             Edit
           </button>
           <button class="btn btn-outline-danger" (click)="deletePost()">
@@ -53,7 +55,7 @@ import {ArticlesService} from '../../services/articles-service.service';
       <!-- Featured Image -->
       <div class="row mb-4">
         <div class="col-md-12">
-          <img [src]=" post[0].imageUrl" class="img-fluid featured-image" [alt]=" post[0].title">
+          <img [src]=" post.imageUrl" class="img-fluid featured-image" [alt]=" post.title">
         </div>
       </div>
 
@@ -62,13 +64,13 @@ import {ArticlesService} from '../../services/articles-service.service';
         <div class="col-md-12">
           <div class="post-content">
             <!-- Replace this with a safer HTML rendering if needed -->
-            <p>{{ post[0].content }}</p>
+            <p>{{ post.content }}</p>
           </div>
         </div>
       </div>
 
       <!-- Comments Section -->
-      <app-comment-section [postId]=" post[0].id"></app-comment-section>
+      <app-comment-section [postId]=" post.id"></app-comment-section>
     </div>
 
     <!-- Loading state -->
